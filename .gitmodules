@@ -1,0 +1,6 @@
+[submodule "ext/libsodium"]
+	path = ext/libsodium
+	url = https://github.com/jedisct1/libsodium
+[submodule "ext/googletest"]
+	path = ext/googletest
+	url = https://github.com/google/googletest
