@@ -15,5 +15,7 @@ set_target_properties(
   ${PROJECT_NAME} PROPERTIES VERSION ${CMAKE_PROJECT_VERSION}
                              SOVERSION ${CMAKE_PROJECT_VERSION_MAJOR})
 
-enable_testing()
-add_subdirectory(tests)
+if(TESTING)
+  enable_testing()
+  add_subdirectory(tests)
+endif()

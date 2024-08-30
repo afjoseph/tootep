@@ -7,7 +7,7 @@ set(LIBSODIUM_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../ext/libsodium)
 # Command to build libsodium as a static library using zig
 add_custom_command(
   OUTPUT ${LIBSODIUM_DIR}/zig-out/lib/libsodium.a
-  COMMAND zig clean && zig build -Dstatic=true
+  COMMAND zig build -Dstatic=true
   WORKING_DIRECTORY ${LIBSODIUM_DIR}
   COMMENT "Building libsodium as a static library using zig"
   VERBATIM)
